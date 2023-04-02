@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <div class="wrapper flex j-center ai-center">
+      <div class="passwordbox">
+        <div class="top flex j-center ai-center">
+          <p class="color-g">Password Generator</p>
+          <div class="password flex ai-center">
+            <h1 class="color-g"></h1>
+            <p class="copy-paste pointer">📃</p>
+          </div>
+        </div>
+        <div class="bottom flex">
+          <div class="length flex ai-center color-green">
+            <p class="color-w">Character Length</p>
+            <h2 class="length-num">5</h2>
+          </div>
+          <div class="flex j-center">
+            <input
+              type="range"
+              min="5"
+              max="20"
+              id="range"
+              value="5"
+              step="1"
+              name="passlength"
+            />
+            <output name="val" for="range"></output>
+          </div>
+
+          <div class="parameters color-w flex">
+            <div class="para">
+              <input type="checkbox" id="uppercase" />
+              <label for="uppercase">Inlude Uppercase Letters</label>
+            </div>
+            <div class="para">
+              <input type="checkbox" id="lowercase" />
+              <label for="lowercase">Inlude Lowercase Letters</label>
+            </div>
+            <div class="para">
+              <input type="checkbox" id="numbers" />
+              <label for="numbers">Include Numbers</label>
+            </div>
+            <div class="para">
+              <input type="checkbox" id="symbols" />
+              <label for="symbols">Inlude Symbols</label>
+            </div>
+          </div>
+          <div class="strength color-w flex ai-center">
+            <h3>STRENGTH</h3>
+            <div class="strengthboxes flex">
+              <div class="one lvl"></div>
+              <div class="two lvl"></div>
+              <div class="three lvl"></div>
+              <div class="four lvl"></div>
+            </div>
+          </div>
+          <div class="generatebtn">
+            <button class="mainbtn pointer">GENERATE</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
